@@ -1,6 +1,6 @@
 using DefaultEcs;
 
-namespace Source.TemplateGame.Commands
+namespace Source.GGJ2020.Commands
 {
     public interface ICommand
     {

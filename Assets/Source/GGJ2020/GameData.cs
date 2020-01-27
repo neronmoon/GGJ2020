@@ -1,4 +1,4 @@
-namespace Source.TemplateGame
+namespace Source.GGJ2020
 {
     // [GData.Attribute.GTable("Table")]
     [System.Serializable]

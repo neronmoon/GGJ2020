@@ -1,10 +1,13 @@
 # TemplateGame Game!
 
+###
+How to get the code:
+```
+git clone --recursive git@github.com:neronmoon/GGJ2020.git
+```
+
 ### What to do:
-* Search and replace `TemplateGame` to your game title
-* Update submodules `git submodule update --recursive`
 * Add GameConfig to scene
-* Check for warnings
 * Make fill TemplateGame/GameData class (make subclasses same file or move them into GameData separate)
 
 # Principles

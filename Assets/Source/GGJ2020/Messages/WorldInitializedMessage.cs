@@ -1,6 +1,6 @@
 using DefaultEcs;
 
-namespace Source.TemplateGame.Messages
+namespace Source.GGJ2020.Messages
 {
     public struct WorldInitializedMessage
     {

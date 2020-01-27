@@ -1,12 +1,12 @@
 using DefaultEcs;
 using DefaultEcs.System;
 using Source.Common;
-using Source.TemplateGame.Features.InitializeFeature;
-using Source.TemplateGame.Features.RenderFeature;
-using Source.TemplateGame.Messages;
+using Source.GGJ2020.Features.InitializeFeature;
+using Source.GGJ2020.Features.RenderFeature;
+using Source.GGJ2020.Messages;
 using Source.Unity;
 
-namespace Source.TemplateGame
+namespace Source.GGJ2020
 {
     public class Game
     {
@@ -21,7 +21,7 @@ namespace Source.TemplateGame
         public Game()
         {
             _world = new World();
-            _world.SetEntityMutator(new TemplateGameEntityMutator());
+            _world.SetEntityMutator(new GGJ2020EntityMutator());
             var container = Container.Instance;
             container.Register(typeof(World), () => _world).AsSingleton();
             _initSystem = MakeInitializeSystem(_world);

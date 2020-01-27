@@ -1,10 +1,10 @@
 using DefaultEcs;
 using System.Collections.Generic;
-using Source.TemplateGame.Features.RenderFeature;
+using Source.GGJ2020.Features.RenderFeature;
 using Source.Common;
 using Source.Common.Extensions;
-using Source.TemplateGame.Features.RenderFeature.Components;
-using Source.TemplateGame.Messages;
+using Source.GGJ2020.Features.RenderFeature.Components;
+using Source.GGJ2020.Messages;
 using UnityEngine;
 
 namespace Source.Unity.Views

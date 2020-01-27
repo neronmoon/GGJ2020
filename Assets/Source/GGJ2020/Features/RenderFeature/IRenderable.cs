@@ -1,6 +1,6 @@
 using DefaultEcs;
 
-namespace Source.TemplateGame.Features.RenderFeature
+namespace Source.GGJ2020.Features.RenderFeature
 {
     public interface IRenderable
     {

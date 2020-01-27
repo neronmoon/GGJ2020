@@ -12,7 +12,7 @@ namespace Source.Unity
         [SerializeField]
         private GameData _gameData = null;
 
-        public static TemplateGame.GameData GetGameData()
+        public static GGJ2020.GameData GetGameData()
         {
             return Instance._gameData.GetData();
         }

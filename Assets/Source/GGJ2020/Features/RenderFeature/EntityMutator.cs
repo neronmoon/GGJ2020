@@ -1,11 +1,11 @@
 using System;
 using System.Linq;
 using DefaultEcs;
-using Source.TemplateGame.Features.RenderFeature.Components;
+using Source.GGJ2020.Features.RenderFeature.Components;
 
-namespace Source.TemplateGame.Features.RenderFeature
+namespace Source.GGJ2020.Features.RenderFeature
 {
-    public class TemplateGameEntityMutator : EntityMutator
+    public class GGJ2020EntityMutator : EntityMutator
     {
         public override void Set<T>(Entity entity, in T component)
         {

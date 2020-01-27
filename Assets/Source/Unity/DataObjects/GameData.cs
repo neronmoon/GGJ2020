@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace Source.Unity.DataObjects
 {
-    [CreateAssetMenu(menuName = "TemplateGame/GameDataAsset", fileName = "GameData")]
+    [CreateAssetMenu(menuName = "GGJ2020/GameDataAsset", fileName = "GameData")]
     public class GameData : ScriptableObject
     {
         [BoxGroup("GData"), InspectorName("SpreadsheetId")]
@@ -16,9 +16,9 @@ namespace Source.Unity.DataObjects
         public string GDataApiKey;
 
         [Space(10), SerializeField]
-        private TemplateGame.GameData _data;
+        private GGJ2020.GameData _data;
 
-        public TemplateGame.GameData GetData()
+        public GGJ2020.GameData GetData()
         {
             if (_data == null) {
                 throw new Exception("GameData is not loaded!");
@@ -37,7 +37,7 @@ namespace Source.Unity.DataObjects
             Debug.Log("[GameData] Loading!");
             DataSource ds = new DataSource(GDataApiKey, GDataSpreadsheetId);
             EntityLoader loader = new EntityLoader(ds);
-            _data = loader.Load(typeof(TemplateGame.GameData));
+            _data = loader.Load(typeof(GGJ2020.GameData));
             Debug.Log("[GameData] Loaded!");
 
             EditorUtility.SetDirty(this);

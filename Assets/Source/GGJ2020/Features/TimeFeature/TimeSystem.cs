@@ -1,8 +1,8 @@
 using DefaultEcs;
 using DefaultEcs.System;
-using Source.TemplateGame.Features.TimeFeature.Components;
+using Source.GGJ2020.Features.TimeFeature.Components;
 
-namespace Source.TemplateGame.Features.RenderFeature
+namespace Source.GGJ2020.Features.RenderFeature
 {
     public class TimeSystem : AEntitySystem<float>
     {

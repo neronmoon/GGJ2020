@@ -1,4 +1,4 @@
-namespace Source.TemplateGame.Features.RenderFeature.Components
+namespace Source.GGJ2020.Features.RenderFeature.Components
 {
     public struct ViewResourceComponent
     {

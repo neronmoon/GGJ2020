@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using DefaultEcs;
 using DefaultEcs.Serialization;
-using Source.TemplateGame.Commands;
+using Source.GGJ2020.Commands;
 
 namespace Source.Common.Extensions
 {

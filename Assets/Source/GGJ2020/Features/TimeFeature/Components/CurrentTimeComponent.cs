@@ -1,4 +1,4 @@
-namespace Source.TemplateGame.Features.TimeFeature.Components
+namespace Source.GGJ2020.Features.TimeFeature.Components
 {
     public struct CurrentTimeComponent
     {

@@ -1,9 +1,9 @@
 using DefaultEcs;
 using DefaultEcs.System;
-using Source.TemplateGame.Features.RenderFeature.Components;
-using Source.TemplateGame.Features.TimeFeature.Components;
+using Source.GGJ2020.Features.RenderFeature.Components;
+using Source.GGJ2020.Features.TimeFeature.Components;
 
-namespace Source.TemplateGame.Features.InitializeFeature
+namespace Source.GGJ2020.Features.InitializeFeature
 {
     public class InitializeGameSystem : ISystem<float>
     {
