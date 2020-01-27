@@ -1,0 +1,6 @@
+[submodule "Assets/Plugins/GData"]
+	path = Assets/Plugins/GData
+	url = git@github.com:neronmoon/GData.git
+[submodule "Assets/Plugins/NaughtyAttributes"]
+	path = Assets/Plugins/NaughtyAttributes
+	url = git@github.com:dbrizov/NaughtyAttributes.git
