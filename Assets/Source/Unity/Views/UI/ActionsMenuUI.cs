@@ -23,8 +23,12 @@ namespace Source.Unity.Views.UI {
 
         private void Awake() {
             World world = Container.Resolve<World>();
-            world.Subscribe<CancelMessage>(delegate { gameObject.SetActive(false); });
+            world.Subscribe<CancelMessage>(delegate {
+                if (!gameObject.activeSelf) return;
+                gameObject.SetActive(false);
+            });
             world.Subscribe<MoveMessage>(delegate(in MoveMessage msg) {
+                if (!gameObject.activeSelf) return;
                 if (msg.Type == MovementType.Up) {
                     int currentActiveItem = (CurrentActiveItem - 1) % items.Count;
                     SelectItem(currentActiveItem < 0 ? items.Count - 1 : currentActiveItem);
@@ -34,6 +38,7 @@ namespace Source.Unity.Views.UI {
             });
 
             world.Subscribe<SubmitMessage>(delegate {
+                if (!gameObject.activeSelf) return;
                 int i = 0;
                 IAction action = null;
                 foreach (var item in items) {
@@ -43,10 +48,10 @@ namespace Source.Unity.Views.UI {
 
                     i++;
                 }
+
                 SkeletonEntity.ApplyCommand(new SelectActionTargetCommand(action));
 
                 gameObject.SetActive(false);
-                Debug.Log(11);
             });
         }
 
