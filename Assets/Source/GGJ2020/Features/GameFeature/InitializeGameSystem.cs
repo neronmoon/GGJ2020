@@ -1,9 +1,11 @@
 using DefaultEcs;
 using DefaultEcs.System;
+using Source.Common;
 using Source.GGJ2020.Features.RenderFeature.Components;
+using Source.GGJ2020.Features.SquadFeature.Components;
 using Source.GGJ2020.Features.TimeFeature.Components;
 
-namespace Source.GGJ2020.Features.InitializeFeature
+namespace Source.GGJ2020.Features.GameFeature
 {
     public class InitializeGameSystem : ISystem<float>
     {
@@ -17,9 +19,12 @@ namespace Source.GGJ2020.Features.InitializeFeature
 
         public void Update(float state)
         {
-            Entity entity = _world.CreateEntity();
-            entity.Set(new ViewResourceComponent {Value = Game.Config.TestPrefab});
-            entity.Set(new TimeoutComponent {Value = Game.Data.TestDisposeTime});
+            Entity skeletonSquad = _world.CreateEntity();
+            skeletonSquad.Set(new SkeletonSquadComponent());
+            _world.SetMaximumComponentCount<SkeletonSquadComponent>(1);
+
+//            entity.Set(new ViewResourceComponent {Value = Game.Config.TestPrefab});
+//            entity.Set(new TimeoutComponent {Value = Game.Data.TestDisposeTime});
         }
 
         public void Dispose() { }

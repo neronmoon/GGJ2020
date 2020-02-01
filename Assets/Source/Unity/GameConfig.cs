@@ -6,9 +6,10 @@ namespace Source.Unity
 {
     public class GameConfig : MonoBehaviourSingleton<GameConfig>
     {
-        // TODO GameConfig options goes here
-        public GameObject TestPrefab;
-
+        public CircleCollider2D SkeletonSpawnArea;
+        public GameObject SkeletonPrefab;
+        
+        
         [SerializeField]
         private GameData _gameData = null;
 

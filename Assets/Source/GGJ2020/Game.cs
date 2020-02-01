@@ -1,7 +1,7 @@
 using DefaultEcs;
 using DefaultEcs.System;
 using Source.Common;
-using Source.GGJ2020.Features.InitializeFeature;
+using Source.GGJ2020.Features.GameFeature;
 using Source.GGJ2020.Features.RenderFeature;
 using Source.GGJ2020.Messages;
 using Source.Unity;
