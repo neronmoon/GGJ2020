@@ -19,8 +19,9 @@ namespace Source.GGJ2020.Factories {
 
             CircleCollider2D area = GameConfig.Instance.SkeletonSpawnArea;
 
+            Vector2 randomVector = Random.insideUnitCircle * area.radius + area.offset;
             skeleton.Set(new PositionComponent {
-                Value = Random.insideUnitCircle * area.radius + area.offset
+                Value = new Vector2Int(Mathf.CeilToInt(randomVector.x), Mathf.CeilToInt(randomVector.y))
             });
             skeleton.Set(new ViewResourceComponent {
                 Value = GameConfig.Instance.SkeletonPrefab,

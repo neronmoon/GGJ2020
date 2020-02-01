@@ -5,13 +5,13 @@ namespace Source.Common.Extensions
 {
     public static class EntitySetExtension
     {
-        public static Entity First(this EntitySet set)
+        public static Entity? First(this EntitySet set)
         {
             if (set.Count > 0) {
                 return set.GetEntities()[0];
             }
 
-            throw new Exception("Entity set is empty");
+            return null;
         }
     }
 }

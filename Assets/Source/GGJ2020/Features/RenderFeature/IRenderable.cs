@@ -4,7 +4,7 @@ namespace Source.GGJ2020.Features.RenderFeature
 {
     public interface IRenderable
     {
-        void LinkTo(Entity entity);
+        void LinkTo(Entity? entity);
         void SetEntity(Entity entity);
         void LinkTo(EntitySetBuilder builder);
         void Render(Entity entity);

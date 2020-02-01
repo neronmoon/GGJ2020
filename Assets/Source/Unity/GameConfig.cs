@@ -4,10 +4,12 @@ using UnityEngine;
 
 namespace Source.Unity
 {
-    public class GameConfig : MonoBehaviourSingleton<GameConfig>
-    {
+    public class GameConfig : MonoBehaviourSingleton<GameConfig> {
+        public int MaxSkeletonsCount = 3;
+        
         public CircleCollider2D SkeletonSpawnArea;
         public GameObject SkeletonPrefab;
+        public GameObject ActionHandlePrefab;
         
         
         [SerializeField]

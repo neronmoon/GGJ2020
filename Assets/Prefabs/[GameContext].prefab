@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1300923120566905741}
   - component: {fileID: 1300923120566905740}
+  - component: {fileID: 557818276}
   m_Layer: 0
   m_Name: '[GameContext]'
   m_TagString: Untagged
@@ -43,6 +44,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9b0c6379b5a485e8c807e93e1312de5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TestPrefab: {fileID: 2663013572056484760, guid: a85515b8900c86c4b88c00220cd2ae21,
+  MaxSkeletonsCount: 3
+  SkeletonSpawnArea: {fileID: 0}
+  SkeletonPrefab: {fileID: 3498445904395600568, guid: f54836adba5c146afbacc01efe50b831,
+    type: 3}
+  ActionHandlePrefab: {fileID: 4109395472588286827, guid: a5d0e5c8e72c74b25bcef80af0f19879,
     type: 3}
   _gameData: {fileID: 11400000, guid: 9679d076992ce4640887d889f11d5be4, type: 2}
+--- !u!114 &557818276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300923120566905743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b57941c0c4bd4ee78b77ed88ba533620, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnSkeletonKey: 120
+  NextSkeletonKey: 9
+  SkeletonMenuKey: 32
+  SubmitKey: 13
+  CancelKey: 27

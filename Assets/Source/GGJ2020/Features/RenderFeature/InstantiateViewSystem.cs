@@ -1,5 +1,6 @@
 using DefaultEcs;
 using DefaultEcs.System;
+using Source.GGJ2020.Features.MovementFeature;
 using Source.GGJ2020.Features.MovementFeature.Components;
 using Source.GGJ2020.Features.RenderFeature.Components;
 using UnityEngine;
@@ -22,7 +23,7 @@ namespace Source.GGJ2020.Features.RenderFeature {
             var go = Object.Instantiate(resource.Value);
             if (entity.Has<PositionComponent>()) {
                 var pos = entity.Get<PositionComponent>();
-                go.transform.position = new Vector3(pos.Value.x, pos.Value.y, 0f);                
+                go.transform.position = PositionCalculator.Calculate(pos.Value);                
             }
             
             foreach (IRenderable renderable in go.GetComponentsInChildren<IRenderable>()) {

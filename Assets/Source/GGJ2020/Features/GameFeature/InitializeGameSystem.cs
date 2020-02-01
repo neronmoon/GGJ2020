@@ -1,9 +1,8 @@
+using System.Collections.Generic;
 using DefaultEcs;
 using DefaultEcs.System;
-using Source.Common;
-using Source.GGJ2020.Features.RenderFeature.Components;
+using Source.GGJ2020.Features.ActionsFeature.Components;
 using Source.GGJ2020.Features.SquadFeature.Components;
-using Source.GGJ2020.Features.TimeFeature.Components;
 
 namespace Source.GGJ2020.Features.GameFeature
 {
@@ -21,7 +20,12 @@ namespace Source.GGJ2020.Features.GameFeature
         {
             Entity skeletonSquad = _world.CreateEntity();
             skeletonSquad.Set(new SkeletonSquadComponent());
-            _world.SetMaximumComponentCount<SkeletonSquadComponent>(1);
+            skeletonSquad.Set(new ActionsContainerComponent {
+                Value = new List<IAction> {
+                    new GoToAction(),
+                    new BringAction()
+                }
+            });
 
         }
 

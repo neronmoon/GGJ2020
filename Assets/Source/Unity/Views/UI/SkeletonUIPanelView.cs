@@ -12,7 +12,7 @@ namespace Source.Unity.Views.UI {
         private Dictionary<Entity, SkeletonUIView> views = new Dictionary<Entity, SkeletonUIView>(5);
 
         protected override void OnWorldInitialized(in WorldInitializedMessage message) {
-            LinkTo(message.World.FindOne(w => w
+            LinkTo((Entity) message.World.FindOne(w => w
                 .With<SkeletonSquadComponent>()
             ));
         }
@@ -20,7 +20,6 @@ namespace Source.Unity.Views.UI {
         public override void Render(Entity entity) {
             foreach (var skeletonEntity in entity.Get<SkeletonSquadComponent>().Value) {
                 if (!views.ContainsKey(skeletonEntity)) {
-                    Debug.Log("Spawn UI");
                     var ui = Instantiate(SkeletonUIPrefab, transform);
                     var view = ui.GetComponent<SkeletonUIView>();
                     view.LinkTo(skeletonEntity);
