@@ -13,8 +13,8 @@ namespace Source.Unity {
         private World _world;
         private Entity _skeletonSquad;
 
-        private void Awake() {
-            World _world = Container.Resolve<World>();
+        private void Start() {
+            _world = Container.Resolve<World>();
             _world.Subscribe<WorldInitializedMessage>(OnWorldInitialized);
         }
 
