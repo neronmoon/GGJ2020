@@ -42,7 +42,7 @@ namespace Source.Unity {
             if (Input.GetKeyDown(SkeletonMenuKey)) {
                 Entity? activeSkeleton = _world.FindOne(w => w.With<ActiveSkeletonComponent>());
                 if (activeSkeleton != null) {
-                    _world.Publish(new TriggerAbilitiesMessage {SkeletonEntity = (Entity) activeSkeleton});
+                    _world.Publish(new TriggerActionsMessage {SkeletonEntity = (Entity) activeSkeleton});
                 }
             }
 

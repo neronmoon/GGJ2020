@@ -52,10 +52,6 @@ namespace Source.Unity.Views {
             });
         }
 
-        private void Unsubscribe() {
-            World world = Container.Resolve<World>();
-        }
-
         public override void Render(Entity entity) {
             transform.DOMove(PositionCalculator.Calculate(entity.Get<PositionComponent>().Value), 0.1f);
         }

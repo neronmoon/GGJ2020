@@ -2,6 +2,7 @@ using DefaultEcs;
 using DefaultEcs.System;
 using Source.Common;
 using Source.GGJ2020.Features.GameFeature;
+using Source.GGJ2020.Features.MovementFeature;
 using Source.GGJ2020.Features.RenderFeature;
 using Source.GGJ2020.Messages;
 using Source.Unity;
@@ -68,7 +69,8 @@ namespace Source.GGJ2020
             // TODO Register runtime systems here
             return new SequentialSystem<float>(
                 new InstantiateViewSystem(world),
-                new TimeSystem(world)
+                new TimeSystem(world),
+                new SetNextPathTargetSystem(world)
             );
         }
 

@@ -3,7 +3,5 @@ namespace Source.GGJ2020.Features.ActionsFeature.Components {
         public string GetName() {
             return "Go To";
         }
-        
-        
     }
 }
