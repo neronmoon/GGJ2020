@@ -23,8 +23,6 @@ namespace Source.GGJ2020.Features.GameFeature
             skeletonSquad.Set(new SkeletonSquadComponent());
             _world.SetMaximumComponentCount<SkeletonSquadComponent>(1);
 
-//            entity.Set(new ViewResourceComponent {Value = Game.Config.TestPrefab});
-//            entity.Set(new TimeoutComponent {Value = Game.Data.TestDisposeTime});
         }
 
         public void Dispose() { }

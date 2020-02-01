@@ -16,9 +16,16 @@ namespace Source.GGJ2020.Commands {
         }
 
         public void Apply(Entity entity) {
+            SkeletonSquadComponent squad = entity.Get<SkeletonSquadComponent>();
+            foreach (var e in squad.Value) {
+                if (e.Has<ActiveSkeletonComponent>()) {
+                    e.Remove<ActiveSkeletonComponent>();
+                }
+            }
             Entity skeleton = _factory.MakeSkeleton();
-            var squad = entity.Get<SkeletonSquadComponent>();
-            squad.Skeletons.Add(skeleton);
+            skeleton.Set(new ActiveSkeletonComponent());
+            
+            squad.Value.Add(skeleton);
             entity.Set(squad);
         }
     }

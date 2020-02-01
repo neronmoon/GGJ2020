@@ -1,14 +1,12 @@
 using DefaultEcs;
-using Source.Common.Extensions;
-using UnityEngine;
 
 namespace Source.Unity.Views
 {
-    public class TestView : EntityView
+    public class SkeletonView : EntityView
     {
         public override void Render(Entity entity)
         {
-            Debug.Log(entity.Debug());
+//            Debug.Log(entity.Debug());
         }
     }
 }

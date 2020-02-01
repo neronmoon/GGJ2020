@@ -9,11 +9,12 @@ using UnityEngine;
 namespace Source.Unity {
     public class InputRegistrar : MonoBehaviour {
         public KeyCode SpawnSkeletonKey;
+        public KeyCode NextSkeletonKey;
 
         private World _world;
         private Entity _skeletonSquad;
 
-        private void Start() {
+        private void Awake() {
             _world = Container.Resolve<World>();
             _world.Subscribe<WorldInitializedMessage>(OnWorldInitialized);
         }
@@ -25,6 +26,9 @@ namespace Source.Unity {
         private void Update() {
             if (Input.GetKeyDown(SpawnSkeletonKey)) {
                 _skeletonSquad.ApplyCommand(new SpawnSkeletonCommand());
+            }
+            if (Input.GetKeyDown(NextSkeletonKey)) {
+                _skeletonSquad.ApplyCommand(new SelectNextSkeletonCommand());
             }
         }
     }

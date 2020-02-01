@@ -1,6 +1,8 @@
+using System.Numerics;
+
 namespace Source.GGJ2020.Features.RenderFeature.Components
 {
-    public struct ViewResourceComponent
+    public class ViewResourceComponent
     {
         public UnityEngine.GameObject Value;
     }

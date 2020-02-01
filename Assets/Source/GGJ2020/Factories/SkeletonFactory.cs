@@ -1,7 +1,9 @@
 using DefaultEcs;
+using Source.GGJ2020.Features.MovementFeature.Components;
 using Source.GGJ2020.Features.RenderFeature.Components;
 using Source.GGJ2020.Features.SquadFeature.Components;
 using Source.Unity;
+using UnityEngine;
 
 namespace Source.GGJ2020.Factories {
     public class SkeletonFactory {
@@ -14,9 +16,16 @@ namespace Source.GGJ2020.Factories {
         public Entity MakeSkeleton() {
             Entity skeleton = _world.CreateEntity();
             skeleton.Set(new SkeletonComponent());
-            skeleton.Set(new ViewResourceComponent {
-                Value = GameConfig.Instance.SkeletonPrefab
+
+            CircleCollider2D area = GameConfig.Instance.SkeletonSpawnArea;
+
+            skeleton.Set(new PositionComponent {
+                Value = Random.insideUnitCircle * area.radius + area.offset
             });
+            skeleton.Set(new ViewResourceComponent {
+                Value = GameConfig.Instance.SkeletonPrefab,
+            });
+
             return skeleton;
         }
     }
