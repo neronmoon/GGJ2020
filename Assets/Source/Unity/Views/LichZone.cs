@@ -8,7 +8,8 @@ namespace Source.Unity.Views {
     public class LichZone : MonoBehaviour {
         public List<string> Items;
 
-        private List<string> recepies;
+        [TextArea]
+        public List<string> recepies;
         private System.Random r = new System.Random();
 
         public CanvasGroup CanvasGroup;
@@ -16,7 +17,6 @@ namespace Source.Unity.Views {
         public Button CloseButton;
 
         private void Awake() {
-            recepies = new Recepies().Recepty;
             CloseButton.onClick.AddListener(OnCloseButton);
         }
 
@@ -26,6 +26,11 @@ namespace Source.Unity.Views {
                 Items.Remove(skeleton.Item.Name);
                 skeleton.Item = null;
                 ShowRecepy();
+                Destroy(other.gameObject);
+            }
+
+            if (Items.Count < 1) {
+                YouWin();
             }
         }
 
@@ -38,6 +43,15 @@ namespace Source.Unity.Views {
             recepies.RemoveAt(idx);
         }
 
+        private void YouWin() {
+            CanvasGroup.DOFade(1f, 0.5f);
+            Text.text = "Thanks for playing!";
+            CloseButton.onClick.RemoveAllListeners();
+            CloseButton.onClick.AddListener(delegate {
+                Application.Quit();
+            });
+        }
+        
         private void OnCloseButton() {
             CanvasGroup.DOFade(0f, 0.5f);
             CanvasGroup.gameObject.SetActive(false);

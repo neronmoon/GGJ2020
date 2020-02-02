@@ -78848,6 +78848,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 372691799, guid: af8531844f19c45438f6a1de7155997c, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 482203291, guid: af8531844f19c45438f6a1de7155997c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 482203295, guid: af8531844f19c45438f6a1de7155997c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 726901578464210097, guid: af8531844f19c45438f6a1de7155997c,
         type: 3}
       propertyPath: m_LocalPosition.x
