@@ -38,7 +38,7 @@ namespace Source.Unity.Views {
                 Items.Remove(skeleton.Item.Name);
                 Destroy(skeleton.Item.gameObject);
                 skeleton.Item = null;
-                Text.text = getTrackerText();
+                TutorialText.text = getTrackerText();
                 ShowRecepy();
             }
 
@@ -52,7 +52,7 @@ namespace Source.Unity.Views {
         }
 
         private void Update() {
-            if (Input.GetKeyDown(KeyCode.X)) {
+            if (Input.GetKeyDown(KeyCode.Return)) {
                 OnCloseButton();
             }
         }

@@ -54,6 +54,7 @@ MonoBehaviour:
   TriggersTilemap: {fileID: 0}
   CanInteract: 1
   TutorialGroup: {fileID: 0}
+  ItemsTracker: {fileID: 0}
   _gameData: {fileID: 11400000, guid: 9679d076992ce4640887d889f11d5be4, type: 2}
 --- !u!114 &557818276
 MonoBehaviour:
@@ -67,7 +68,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b57941c0c4bd4ee78b77ed88ba533620, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpawnSkeletonKey: 120
+  SpawnSkeletonKey: 115
   NextSkeletonKey: 9
   SkeletonMenuKey: 32
   SubmitKey: 13

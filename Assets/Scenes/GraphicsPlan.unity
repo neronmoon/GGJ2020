@@ -630,6 +630,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 57599812}
     m_Modifications:
+    - target: {fileID: 726901578464210096, guid: af8531844f19c45438f6a1de7155997c,
+        type: 3}
+      propertyPath: TutorialText
+      value: 
+      objectReference: {fileID: 2013924710}
     - target: {fileID: 726901578464210097, guid: af8531844f19c45438f6a1de7155997c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9040,7 +9045,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileSpriteIndex: 27
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -9716,9 +9721,8 @@ Tilemap:
   - m_RefCount: 0
     m_Data: {fileID: 0}
   m_TileSpriteArray:
-  - m_RefCount: 1
-    m_Data: {fileID: -1994141993942582034, guid: 70c559e8db8d64648b7548be09284983,
-      type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 3
     m_Data: {fileID: -4883733463899356938, guid: 0987e43ebd821437487ca6b90cee0205,
       type: 3}
@@ -9797,8 +9801,9 @@ Tilemap:
   - m_RefCount: 3
     m_Data: {fileID: -5681067627176997163, guid: a6b2684dcf6df4fdbb7ca2ff06868e75,
       type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: -1994141993942582034, guid: 70c559e8db8d64648b7548be09284983,
+      type: 3}
   m_TileMatrixArray:
   - m_RefCount: 109
     m_Data:
@@ -10961,8 +10966,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 1.5, y: -1.5}
-  m_SizeDelta: {x: 19.98, y: 11.42}
+  m_AnchoredPosition: {x: 0.99, y: -1.62}
+  m_SizeDelta: {x: 9.17, y: 3.18}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1361429840
 MonoBehaviour:
@@ -29877,7 +29882,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Press <b>X</b> to summon
+  m_text: 'Press <b>S</b> to summon
 
     Use <b>arrows</b> to move
 
