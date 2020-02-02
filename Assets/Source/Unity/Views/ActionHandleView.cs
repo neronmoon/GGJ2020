@@ -17,28 +17,7 @@ namespace Source.Unity.Views {
                 if (!gameObject.activeSelf) return;
                 Destroy(gameObject);
             });
-            world.Subscribe(delegate(in MoveMessage msg) {
-                if (!gameObject.activeSelf) return;
-                Vector2Int target = Vector2Int.zero;
-                if (msg.Type == MovementType.Down) {
-                    target.y = -1;
-                }
-
-                if (msg.Type == MovementType.Up) {
-                    target.y = 1;
-                }
-
-                if (msg.Type == MovementType.Right) {
-                    target.x = 1;
-                }
-
-                if (msg.Type == MovementType.Left) {
-                    target.x = -1;
-                }
-
-                Vector2Int targetPosition = LinkedEntity.Get<PositionComponent>().Value + target;
-                LinkedEntity.Set(new PositionComponent {Value = targetPosition});
-            });
+            
 
             world.Subscribe<SubmitMessage>(delegate {
                 if (!gameObject.activeSelf) return;

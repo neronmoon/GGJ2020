@@ -10,6 +10,8 @@ namespace Source.Unity
         public CircleCollider2D SkeletonSpawnArea;
         public GameObject SkeletonPrefab;
         public GameObject ActionHandlePrefab;
+
+        public bool BlockInteractions = false;
         
         
         [SerializeField]
