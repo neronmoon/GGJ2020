@@ -266,3 +266,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ActionsMenu: {fileID: 1574259801}
+  SelectedColor: {r: 1, g: 0.8, b: 0.30980393, a: 1}
+  Image: {fileID: 3498445903647867994}

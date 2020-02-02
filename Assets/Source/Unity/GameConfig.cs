@@ -6,7 +6,7 @@ using UnityEngine.Tilemaps;
 namespace Source.Unity
 {
     public class GameConfig : MonoBehaviourSingleton<GameConfig> {
-        public int MaxSkeletonsCount = 3;
+        public int MaxSkeletonsCount = 2;
         
         public CircleCollider2D SkeletonSpawnArea;
         public GameObject SkeletonPrefab;
