@@ -18,17 +18,18 @@ namespace Source.Unity.Views {
 
         public CanvasGroup CanvasGroup;
         public TextMeshProUGUI Text;
+        public TextMeshProUGUI TutorialText;
         public Button CloseButton;
 
         private void Awake() {
             CloseButton.onClick.AddListener(OnCloseButton);
-            Container.Resolve<World>()
-                     .Subscribe<SkeletonSpawnedMessage>(delegate(in SkeletonSpawnedMessage message) {
-                         Text.text = getTrackerText();
-                     });
+        }
 
-//            CanvasGroup group = GameConfig.Instance.TutorialGroup;
-//            group.DOFade(0f, 0.5f);
+        private void Start() {
+            Container.Resolve<World>()
+                     .Subscribe(delegate(in SkeletonSpawnedMessage message) {
+                         TutorialText.text = getTrackerText();
+                     });
         }
 
         private void OnTriggerEnter2D(Collider2D other) {
@@ -46,8 +47,8 @@ namespace Source.Unity.Views {
             }
         }
 
-        private string getTrackerText() {
-            return "Bring me this items: " + String.Join(", ", Items);
+        public string getTrackerText() {
+            return "Bring me " + String.Join(", ", Items);
         }
 
         private void Update() {
