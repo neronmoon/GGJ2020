@@ -50,6 +50,10 @@ MonoBehaviour:
     type: 3}
   ActionHandlePrefab: {fileID: 4109395472588286827, guid: a5d0e5c8e72c74b25bcef80af0f19879,
     type: 3}
+  NonWalkableTilemap: {fileID: 0}
+  TriggersTilemap: {fileID: 0}
+  CanInteract: 1
+  TutorialGroup: {fileID: 0}
   _gameData: {fileID: 11400000, guid: 9679d076992ce4640887d889f11d5be4, type: 2}
 --- !u!114 &557818276
 MonoBehaviour:
