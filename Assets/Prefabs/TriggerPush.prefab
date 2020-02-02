@@ -71,7 +71,7 @@ SpriteRenderer:
   m_SortingLayerID: 857400303
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: -5987268444031069980, guid: 8f7ff35fc14304d35bd87a836859ef5c,
+  m_Sprite: {fileID: 3713549098536957005, guid: a7f75e4cc8dbf4350ab2dc914f596343,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -95,7 +95,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35ee5e20deaf458fb961355c68d2c1df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Door: {fileID: 0}
+  Doors: []
+  ShouldStandToOpen: 1
 --- !u!1 &3498445904395600568
 GameObject:
   m_ObjectHideFlags: 0
@@ -109,7 +110,7 @@ GameObject:
   - component: {fileID: 4070672682152850190}
   - component: {fileID: 1880663135}
   m_Layer: 0
-  m_Name: Trigger
+  m_Name: TriggerPush
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -168,7 +169,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35ee5e20deaf458fb961355c68d2c1df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Door: {fileID: 0}
+  Doors: []
+  ShouldStandToOpen: 0
 --- !u!50 &1880663135
 Rigidbody2D:
   serializedVersion: 4
