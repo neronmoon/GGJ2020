@@ -1,6 +1,7 @@
 using Source.Unity.Common;
 using Source.Unity.DataObjects;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 namespace Source.Unity
 {
@@ -12,6 +13,8 @@ namespace Source.Unity
         public GameObject ActionHandlePrefab;
 
         public bool BlockInteractions = false;
+        public Tilemap NonWalkableTilemap;
+        public Tilemap TriggersTilemap;
         
         
         [SerializeField]
