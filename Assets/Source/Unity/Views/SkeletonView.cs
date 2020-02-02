@@ -42,7 +42,7 @@ namespace Source.Unity.Views {
                 target.x = -1;
             }
 
-            if(!CanWalkTo((Vector3Int)target)) return;
+            if (!CanWalkTo((Vector3Int) target)) return;
 
             Vector2Int targetPosition = LinkedEntity.Get<PositionComponent>().Value + target;
             LinkedEntity.Set(new PositionComponent {Value = targetPosition});
@@ -52,6 +52,14 @@ namespace Source.Unity.Views {
             Tilemap tilemap = GameConfig.Instance.NonWalkableTilemap;
             Vector3Int cellPosition = tilemap.WorldToCell(transform.position + targetPos);
             TileBase tile = tilemap.GetTile(cellPosition);
+
+            var skeletons = Container.Resolve<World>().GetEntities().With<SkeletonComponent>().AsSet().GetEntities();
+            foreach (var skeleton in skeletons) {
+                if (skeleton.Get<PositionComponent>().Value == LinkedEntity.Get<PositionComponent>().Value + (Vector2Int) targetPos) {
+                    return false;
+                }
+            }
+
             return tile == null;
         }
 
