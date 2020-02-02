@@ -12,10 +12,8 @@ namespace Source.Unity
         public GameObject SkeletonPrefab;
         public GameObject ActionHandlePrefab;
 
-        public bool BlockInteractions = false;
         public Tilemap NonWalkableTilemap;
         public Tilemap TriggersTilemap;
-        
         
         [SerializeField]
         private GameData _gameData = null;
