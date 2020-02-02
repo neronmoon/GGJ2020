@@ -665,7 +665,7 @@ MonoBehaviour:
   Items: []
   CanvasGroup: {fileID: 3365419290491670954}
   Text: {fileID: 372691799}
-  CloseButton: {fileID: 0}
+  CloseButton: {fileID: 1229297267}
 --- !u!61 &726901578464210098
 BoxCollider2D:
   m_ObjectHideFlags: 0

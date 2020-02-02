@@ -17,6 +17,7 @@ namespace Source.Unity.Views {
 
         private void Awake() {
             recepies = new Recepies().Recepty;
+            CloseButton.onClick.AddListener(OnCloseButton);
         }
 
         private void OnTriggerEnter2D(Collider2D other) {
@@ -35,7 +36,6 @@ namespace Source.Unity.Views {
             int idx = r.Next(0, recepies.Count);
             Text.text = recepies[idx];
             recepies.RemoveAt(idx);
-            CloseButton.onClick.AddListener(OnCloseButton);
         }
 
         private void OnCloseButton() {
