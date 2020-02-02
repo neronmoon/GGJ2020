@@ -14,6 +14,8 @@ namespace Source.Unity
 
         public Tilemap NonWalkableTilemap;
         public Tilemap TriggersTilemap;
+
+        public bool CanInteract = true;
         
         [SerializeField]
         private GameData _gameData = null;

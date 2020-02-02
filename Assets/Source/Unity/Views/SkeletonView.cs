@@ -25,6 +25,7 @@ namespace Source.Unity.Views {
 
         private void movement(in MoveMessage msg) {
             if (!LinkedEntity.Has<ActiveSkeletonComponent>()) return;
+            if (!GameConfig.Instance.CanInteract) return;
             if (!gameObject.activeSelf) return;
 
             Vector2Int target = Vector2Int.zero;
