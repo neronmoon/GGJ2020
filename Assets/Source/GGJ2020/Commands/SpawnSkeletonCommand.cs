@@ -1,4 +1,5 @@
 using DefaultEcs;
+using DG.Tweening;
 using Source.Common;
 using Source.GGJ2020.Factories;
 using Source.GGJ2020.Features.SquadFeature.Components;
@@ -30,6 +31,8 @@ namespace Source.GGJ2020.Commands {
 
             squad.Value.Add(skeleton);
             entity.Set(squad);
+
+            GameConfig.Instance.TutorialGroup.DOFade(0f, 0.5f);
         }
     }
 }

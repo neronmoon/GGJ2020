@@ -16,6 +16,7 @@ namespace Source.Unity
         public Tilemap TriggersTilemap;
 
         public bool CanInteract = true;
+        public CanvasGroup TutorialGroup;
         
         [SerializeField]
         private GameData _gameData = null;
