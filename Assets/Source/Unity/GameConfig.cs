@@ -1,5 +1,6 @@
 using Source.Unity.Common;
 using Source.Unity.DataObjects;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
@@ -17,6 +18,7 @@ namespace Source.Unity
 
         public bool CanInteract = true;
         public CanvasGroup TutorialGroup;
+        public TextMeshProUGUI ItemsTracker;
         
         [SerializeField]
         private GameData _gameData = null;
