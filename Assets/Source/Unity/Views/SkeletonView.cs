@@ -15,6 +15,8 @@ namespace Source.Unity.Views {
         private Color NonSelectedColor;
         public SpriteRenderer Image;
 
+        public ItemView Item;
+
         private void Awake() {
             World world = Container.Resolve<World>();
             world.Subscribe<MoveMessage>(movement);
@@ -55,7 +57,8 @@ namespace Source.Unity.Views {
 
             var skeletons = Container.Resolve<World>().GetEntities().With<SkeletonComponent>().AsSet().GetEntities();
             foreach (var skeleton in skeletons) {
-                if (skeleton.Get<PositionComponent>().Value == LinkedEntity.Get<PositionComponent>().Value + (Vector2Int) targetPos) {
+                if (skeleton.Get<PositionComponent>().Value ==
+                    LinkedEntity.Get<PositionComponent>().Value + (Vector2Int) targetPos) {
                     return false;
                 }
             }
@@ -63,8 +66,18 @@ namespace Source.Unity.Views {
             return tile == null;
         }
 
+        public void AddItem(ItemView item) {
+            this.Item = item;
+        }
+
         public override void Render(Entity entity) {
-            transform.DOMove(PositionCalculator.Calculate(entity.Get<PositionComponent>().Value), 0.2f);
+            Vector3 newPosition = PositionCalculator.Calculate(entity.Get<PositionComponent>().Value);
+            transform.DOMove(newPosition, 0.2f);
+
+            if (Item != null) {
+                Item.transform.DOMove(newPosition, 0.2f);
+            }
+
             Image.color = LinkedEntity.Has<ActiveSkeletonComponent>() ? SelectedColor : NonSelectedColor;
         }
     }
