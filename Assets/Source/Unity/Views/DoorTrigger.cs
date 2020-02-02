@@ -8,7 +8,16 @@ namespace Source.Unity.Views {
 
         private void OnTriggerEnter2D(Collider2D collision) {
             foreach (var door in Doors) {
-                door.Open();
+
+                if (ShouldStandToOpen) {
+                    door.Open();
+                } else {
+                    if (door.IsOpen) {
+                        door.Close();
+                    } else {
+                        door.Open();
+                    }
+                }
             }
         }
 
@@ -16,6 +25,7 @@ namespace Source.Unity.Views {
             if (!ShouldStandToOpen) {
                 return;
             }
+
             foreach (var door in Doors) {
                 door.Close();
             }
