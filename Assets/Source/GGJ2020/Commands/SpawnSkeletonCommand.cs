@@ -3,7 +3,10 @@ using DG.Tweening;
 using Source.Common;
 using Source.GGJ2020.Factories;
 using Source.GGJ2020.Features.SquadFeature.Components;
+using Source.GGJ2020.Messages;
 using Source.Unity;
+using TMPro;
+using UnityEngine;
 
 namespace Source.GGJ2020.Commands {
     public class SpawnSkeletonCommand : ICommand {
@@ -32,7 +35,8 @@ namespace Source.GGJ2020.Commands {
             squad.Value.Add(skeleton);
             entity.Set(squad);
 
-            GameConfig.Instance.TutorialGroup.DOFade(0f, 0.5f);
+            entity.World.Publish(new SkeletonSpawnedMessage());
+            
         }
     }
 }

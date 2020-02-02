@@ -34,7 +34,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 53.23793}
+  m_AnchoredPosition: {x: 0, y: 32.599583}
   m_SizeDelta: {x: -100, y: -222.47586}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &372691800
@@ -869,23 +869,23 @@ MonoBehaviour:
     cooking I added some lemon juice, butter, and parsley
 
 '
-  - "Sweet Chili Glazed Meatballs\n\nGround beef, here's the recipe:\nThe meatballs:\n
-    \u2022 1 lb ground beef (or mix of beef/pork/lamb/veal, it's personal preference)\n\n
-    \u2022 1/2 cup panko bread crumbs\n\n \u2022 1 tbsp Worcestershire sauce\n\n
-    \u2022 1 egg, lightly beaten\n\n \u2022 2 cloves garlic, minced\n\n \u2022 2
-    tbsp chopped chives (plus more for garnish)\n\nThe glaze:\n \u2022 1 cup ketchup\n\n
-    \u2022 1/2 cup sweet chili sauce\n\n \u2022 1/2 cup brown sugar\n\n \u2022 2
-    tbsp apple cider vinegar\n\nSTEPS\n 1. In large bowl, mix meat, panko, Worcestershire,
-    egg, garlic, and chives with fingers until well incorporated.\n\n 2. If you've
-    got the time, cover and refrigerate overnight.\n\n3. Preheat oven to 350 F.\n\n
-    4. Shape into 1\" balls, small enough for toothpicks (I went a little big with
-    mine; I'll whittle them down next time).\n\n 5. Sear meatballs in a hot pan,
-    get them a little browned on the sides (but not fully cooked inside/outside)\n\n
-    6. While meatballs sear, mix sauce ingredients in another bowl.\n\n 7. Add meatballs
-    and sauce to a 9x9 baking dish, mix around to coat, and bake for roughly 1 hr
-    (up to 1 hr 20 min), until balls are 165 degrees inside. Spoon the sauce over
-    the balls and stir them around, every now and then.\n\n8. Garish with sliced
-    chives and serve on toothpicks, party-style."
+  - "Sweet Chili Glazed Meatballs\n\nGround beef, here's the recipe:\nThe meatballs:\n\u2022
+    1 lb ground beef (or mix of beef/pork/lamb/veal, it's personal preference)\n\n\u2022
+    1/2 cup panko bread crumbs\n\n \u2022 1 tbsp Worcestershire sauce\n\n\u2022 1
+    egg, lightly beaten\n\n \u2022 2 cloves garlic, minced\n\n \u2022 2 tbsp chopped
+    chives (plus more for garnish)\n\nThe glaze:\n \u2022 1 cup ketchup\n\n\u2022
+    1/2 cup sweet chili sauce\n\n \u2022 1/2 cup brown sugar\n\n \u2022 2 tbsp apple
+    cider vinegar\n\nSTEPS\n 1. In large bowl, mix meat, panko, Worcestershire, egg,
+    garlic, and chives with fingers until well incorporated.\n\n 2. If you've got
+    the time, cover and refrigerate overnight.\n\n3. Preheat oven to 350 F.\n\n4.
+    Shape into 1\" balls, small enough for toothpicks (I went a little big with mine;
+    I'll whittle them down next time).\n\n 5. Sear meatballs in a hot pan, get them
+    a little browned on the sides (but not fully cooked inside/outside)\n\n6. While
+    meatballs sear, mix sauce ingredients in another bowl.\n\n 7. Add meatballs and
+    sauce to a 9x9 baking dish, mix around to coat, and bake for roughly 1 hr (up
+    to 1 hr 20 min), until balls are 165 degrees inside. Spoon the sauce over the
+    balls and stir them around, every now and then.\n\n8. Garish with sliced chives
+    and serve on toothpicks, party-style."
   CanvasGroup: {fileID: 3365419290491670954}
   Text: {fileID: 372691799}
   CloseButton: {fileID: 1229297267}

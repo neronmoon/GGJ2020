@@ -68,7 +68,7 @@ namespace Source.Unity.Views {
         }
 
         public void AddItem(ItemView item) {
-            this.Item = item;
+            Item = item;
         }
 
         public override void Render(Entity entity) {
@@ -76,7 +76,7 @@ namespace Source.Unity.Views {
             transform.DOMove(newPosition, 0.2f);
 
             if (Item != null) {
-                Item.transform.DOMove(newPosition, 0.2f);
+                Item.transform.DOMove(newPosition + new Vector3(0f, 0.3f), 0.2f);
             }
 
             Image.color = LinkedEntity.Has<ActiveSkeletonComponent>() ? SelectedColor : NonSelectedColor;
