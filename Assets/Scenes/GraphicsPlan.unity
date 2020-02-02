@@ -222,6 +222,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 307238538663223564, guid: 122f6beda35dc4b0c8f7becc29799824,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -8839109896955301742, guid: cf00a3a81f43b4cb8ba46648b44ed0e4,
+        type: 3}
     - target: {fileID: 307238538663223565, guid: 122f6beda35dc4b0c8f7becc29799824,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -285,7 +291,7 @@ PrefabInstance:
     - target: {fileID: 307238538663223567, guid: 122f6beda35dc4b0c8f7becc29799824,
         type: 3}
       propertyPath: m_Name
-      value: Item
+      value: Heart
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 122f6beda35dc4b0c8f7becc29799824, type: 3}
@@ -8151,6 +8157,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 307238538663223564, guid: 122f6beda35dc4b0c8f7becc29799824,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1325958171205899772, guid: cf00a3a81f43b4cb8ba46648b44ed0e4,
+        type: 3}
     - target: {fileID: 307238538663223565, guid: 122f6beda35dc4b0c8f7becc29799824,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8214,7 +8226,7 @@ PrefabInstance:
     - target: {fileID: 307238538663223567, guid: 122f6beda35dc4b0c8f7becc29799824,
         type: 3}
       propertyPath: m_Name
-      value: Item (7)
+      value: Intestines
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 122f6beda35dc4b0c8f7becc29799824, type: 3}
@@ -9938,6 +9950,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 307238538663223564, guid: 122f6beda35dc4b0c8f7becc29799824,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2139401355156931458, guid: cf00a3a81f43b4cb8ba46648b44ed0e4,
+        type: 3}
     - target: {fileID: 307238538663223565, guid: 122f6beda35dc4b0c8f7becc29799824,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10001,7 +10019,7 @@ PrefabInstance:
     - target: {fileID: 307238538663223567, guid: 122f6beda35dc4b0c8f7becc29799824,
         type: 3}
       propertyPath: m_Name
-      value: Item (3)
+      value: Legs
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 122f6beda35dc4b0c8f7becc29799824, type: 3}
@@ -10322,6 +10340,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 307238538663223564, guid: 122f6beda35dc4b0c8f7becc29799824,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -7275761866518669941, guid: cf00a3a81f43b4cb8ba46648b44ed0e4,
+        type: 3}
     - target: {fileID: 307238538663223565, guid: 122f6beda35dc4b0c8f7becc29799824,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10385,7 +10409,7 @@ PrefabInstance:
     - target: {fileID: 307238538663223567, guid: 122f6beda35dc4b0c8f7becc29799824,
         type: 3}
       propertyPath: m_Name
-      value: Item (2)
+      value: Brain
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 122f6beda35dc4b0c8f7becc29799824, type: 3}
@@ -10414,6 +10438,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 307238538663223564, guid: 122f6beda35dc4b0c8f7becc29799824,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 7879161488753808251, guid: cf00a3a81f43b4cb8ba46648b44ed0e4,
+        type: 3}
     - target: {fileID: 307238538663223565, guid: 122f6beda35dc4b0c8f7becc29799824,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10472,12 +10502,12 @@ PrefabInstance:
     - target: {fileID: 307238538663223566, guid: 122f6beda35dc4b0c8f7becc29799824,
         type: 3}
       propertyPath: Name
-      value: Teeth
+      value: Tongue
       objectReference: {fileID: 0}
     - target: {fileID: 307238538663223567, guid: 122f6beda35dc4b0c8f7becc29799824,
         type: 3}
       propertyPath: m_Name
-      value: Item (5)
+      value: Tongue
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 122f6beda35dc4b0c8f7becc29799824, type: 3}
@@ -11293,6 +11323,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 307238538663223564, guid: 122f6beda35dc4b0c8f7becc29799824,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -8681350575131652090, guid: cf00a3a81f43b4cb8ba46648b44ed0e4,
+        type: 3}
     - target: {fileID: 307238538663223565, guid: 122f6beda35dc4b0c8f7becc29799824,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11356,7 +11392,7 @@ PrefabInstance:
     - target: {fileID: 307238538663223567, guid: 122f6beda35dc4b0c8f7becc29799824,
         type: 3}
       propertyPath: m_Name
-      value: Item (1)
+      value: Hand
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 122f6beda35dc4b0c8f7becc29799824, type: 3}
@@ -11367,6 +11403,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 307238538663223564, guid: 122f6beda35dc4b0c8f7becc29799824,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -6763583812951809254, guid: cf00a3a81f43b4cb8ba46648b44ed0e4,
+        type: 3}
     - target: {fileID: 307238538663223565, guid: 122f6beda35dc4b0c8f7becc29799824,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11430,7 +11472,7 @@ PrefabInstance:
     - target: {fileID: 307238538663223567, guid: 122f6beda35dc4b0c8f7becc29799824,
         type: 3}
       propertyPath: m_Name
-      value: Item (8)
+      value: Ribs
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 122f6beda35dc4b0c8f7becc29799824, type: 3}
@@ -29595,6 +29637,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 307238538663223564, guid: 122f6beda35dc4b0c8f7becc29799824,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -202834618040673712, guid: cf00a3a81f43b4cb8ba46648b44ed0e4,
+        type: 3}
     - target: {fileID: 307238538663223565, guid: 122f6beda35dc4b0c8f7becc29799824,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -29658,7 +29706,7 @@ PrefabInstance:
     - target: {fileID: 307238538663223567, guid: 122f6beda35dc4b0c8f7becc29799824,
         type: 3}
       propertyPath: m_Name
-      value: Item (6)
+      value: Lungs
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 122f6beda35dc4b0c8f7becc29799824, type: 3}
@@ -29754,6 +29802,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 307238538663223564, guid: 122f6beda35dc4b0c8f7becc29799824,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 8984754096541894249, guid: 70c559e8db8d64648b7548be09284983,
+        type: 3}
     - target: {fileID: 307238538663223565, guid: 122f6beda35dc4b0c8f7becc29799824,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -29817,7 +29871,7 @@ PrefabInstance:
     - target: {fileID: 307238538663223567, guid: 122f6beda35dc4b0c8f7becc29799824,
         type: 3}
       propertyPath: m_Name
-      value: Item (4)
+      value: Butt
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 122f6beda35dc4b0c8f7becc29799824, type: 3}

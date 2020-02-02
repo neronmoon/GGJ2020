@@ -1,25 +1,31 @@
 fileFormatVersion: 2
-guid: 70c559e8db8d64648b7548be09284983
+guid: cf00a3a81f43b4cb8ba46648b44ed0e4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8984754096541894249
-    second: Butt
+      213: -7275761866518669941
+    second: Brain
   - first:
-      213: 2073203306736515940
-    second: Meat_1
+      213: -8839109896955301742
+    second: Heart
   - first:
-      213: 6669852852261953786
-    second: Meat_2
+      213: 7879161488753808251
+    second: Tongue
   - first:
-      213: -1994141993942582034
-    second: Meat_3
+      213: -202834618040673712
+    second: Lungs
   - first:
-      213: -6551529566215524935
-    second: Meat_4
+      213: -1325958171205899772
+    second: Intences
   - first:
-      213: -2814942542822663078
-    second: Meat_5
+      213: -6763583812951809254
+    second: Ribs
+  - first:
+      213: -8681350575131652090
+    second: Hand
+  - first:
+      213: -2139401355156931458
+    second: Legs
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -63,7 +69,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -104,11 +110,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Butt
+      name: Brain
       rect:
         serializedVersion: 2
         x: 0
-        y: 88
+        y: 128
         width: 64
         height: 64
       alignment: 0
@@ -118,18 +124,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9668d9e5f3240bc70800000000000000
-      internalID: 8984754096541894249
+      spriteID: b8552db812d470b90800000000000000
+      internalID: -7275761866518669941
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Meat_1
+      name: Heart
       rect:
         serializedVersion: 2
         x: 64
-        y: 88
+        y: 128
         width: 64
         height: 64
       alignment: 0
@@ -139,18 +145,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 46bf1355c6f75cc10800000000000000
-      internalID: 2073203306736515940
+      spriteID: 290f65d516c255580800000000000000
+      internalID: -8839109896955301742
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Meat_2
+      name: Tongue
       rect:
         serializedVersion: 2
         x: 128
-        y: 88
+        y: 128
         width: 64
         height: 64
       alignment: 0
@@ -160,18 +166,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af0233ba4d3109c50800000000000000
-      internalID: 6669852852261953786
+      spriteID: b73db11e0a7685d60800000000000000
+      internalID: 7879161488753808251
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Meat_3
+      name: Lungs
       rect:
         serializedVersion: 2
-        x: 0
-        y: 24
+        x: 191
+        y: 128
         width: 64
         height: 64
       alignment: 0
@@ -181,18 +187,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eecfc530c626354e0800000000000000
-      internalID: -1994141993942582034
+      spriteID: 05a98835df26f2df0800000000000000
+      internalID: -202834618040673712
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Meat_4
+      name: Intences
       rect:
         serializedVersion: 2
-        x: 64
-        y: 24
+        x: 256
+        y: 128
         width: 64
         height: 64
       alignment: 0
@@ -202,18 +208,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9bd214e229a4415a0800000000000000
-      internalID: -6551529566215524935
+      spriteID: 40aee3a8110499de0800000000000000
+      internalID: -1325958171205899772
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Meat_5
+      name: Ribs
       rect:
         serializedVersion: 2
-        x: 128
-        y: 24
+        x: 320
+        y: 128
         width: 64
         height: 64
       alignment: 0
@@ -223,8 +229,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a5c9be7eba05fe8d0800000000000000
-      internalID: -2814942542822663078
+      spriteID: a13ec6c6b5ce222a0800000000000000
+      internalID: -6763583812951809254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60015aec5a5a58780800000000000000
+      internalID: -8681350575131652090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Legs
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7cb1e17dc15f42e0800000000000000
+      internalID: -2139401355156931458
       vertices: []
       indices: 
       edges: []
