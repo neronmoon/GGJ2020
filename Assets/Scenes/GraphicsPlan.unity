@@ -266,7 +266,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &465145903
 RectTransform:
   m_ObjectHideFlags: 0
@@ -22170,6 +22170,11 @@ PrefabInstance:
       propertyPath: SkeletonSpawnArea
       value: 
       objectReference: {fileID: 101088140}
+    - target: {fileID: 1300923120566905740, guid: 32e5f75930bfd5e4681097a8c7bcce09,
+        type: 3}
+      propertyPath: NonWalkableTilemap
+      value: 
+      objectReference: {fileID: 481326745}
     - target: {fileID: 1300923120566905741, guid: 32e5f75930bfd5e4681097a8c7bcce09,
         type: 3}
       propertyPath: m_LocalPosition.x
