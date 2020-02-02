@@ -150,6 +150,7 @@ GameObject:
   - component: {fileID: 3498445904395600569}
   - component: {fileID: 7686407318470920074}
   - component: {fileID: 1656588987}
+  - component: {fileID: 2374241106018047241}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -219,3 +220,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &2374241106018047241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3498445904395600568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5c952e5be6647f1bab7672423b60b20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DoorTile: {fileID: 11400000, guid: 2f784e219bafa4c6480b0ef282605f43, type: 2}
