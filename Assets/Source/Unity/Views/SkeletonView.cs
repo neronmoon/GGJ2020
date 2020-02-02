@@ -11,10 +11,14 @@ using UnityEngine.Tilemaps;
 namespace Source.Unity.Views {
     public class SkeletonView : EntityView {
         public GameObject ActionsMenu;
+        public Color SelectedColor;
+        private Color NonSelectedColor;
+        public SpriteRenderer Image;
 
         private void Awake() {
             World world = Container.Resolve<World>();
             world.Subscribe<MoveMessage>(movement);
+            NonSelectedColor = Image.color;
         }
 
         private void movement(in MoveMessage msg) {
@@ -53,6 +57,7 @@ namespace Source.Unity.Views {
 
         public override void Render(Entity entity) {
             transform.DOMove(PositionCalculator.Calculate(entity.Get<PositionComponent>().Value), 0.2f);
+            Image.color = LinkedEntity.Has<ActiveSkeletonComponent>() ? SelectedColor : NonSelectedColor;
         }
     }
 }

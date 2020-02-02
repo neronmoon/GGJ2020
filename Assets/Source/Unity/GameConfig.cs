@@ -6,16 +6,14 @@ using UnityEngine.Tilemaps;
 namespace Source.Unity
 {
     public class GameConfig : MonoBehaviourSingleton<GameConfig> {
-        public int MaxSkeletonsCount = 3;
+        public int MaxSkeletonsCount = 2;
         
         public CircleCollider2D SkeletonSpawnArea;
         public GameObject SkeletonPrefab;
         public GameObject ActionHandlePrefab;
 
-        public bool BlockInteractions = false;
         public Tilemap NonWalkableTilemap;
         public Tilemap TriggersTilemap;
-        
         
         [SerializeField]
         private GameData _gameData = null;
